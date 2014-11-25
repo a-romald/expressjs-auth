@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 #{title}
+  br
+  -if(username.length > 0)
+    a(href='/') Main
+    p.logged You are already registered
+      a(href='/users/logout') Log Out
+  -else
+    a(href='/') Main    
+    include form_reg

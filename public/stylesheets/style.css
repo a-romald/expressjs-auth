@@ -1,0 +1,34 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #646266;
+}
+
+a {
+  color: #00B7FF;
+}
+div.container {margin:0 auto;}
+div.container h1 {text-align: center;}
+span.link_divider {margin: 0 10px;}
+/*Registration form*/
+div.form_reg {width: 600px;}
+div.form_reg h3 {margin-bottom: 40px;}
+div.form_reg form label {width:150px; float: left; font-size: 12px;}
+div.form_reg form input {float: left; margin-bottom: 10px;}
+div.form_reg br {clear: both;}
+div.form_reg form input[type=submit] {padding:7px;}
+/* Messages */
+div.err {margin-top:-15px; margin-bottom: 30px;}
+p.error {font-style: italic; color:#8B0000;}
+div#err_note {color:red; font-style: italic; font-weight: bold; margin-bottom: 10px;}
+div#success_note {color:green; font-style: italic; font-weight: bold; margin-bottom: 10px;}
+/*Logged messages*/
+p.logged {margin-left: 5px;}
+p.logged a {margin-left: 10px;}
+/*Update form*/
+div.form_update {width: 600px; margin-top: 80px; margin-bottom: 20px;}
+div.form_update h3 {margin-bottom: 40px;}
+div.form_update form label {width:150px; float: left; font-size: 12px;}
+div.form_update form input {float: left; margin-bottom: 10px;}
+div.form_update br {clear: both;}
+div.form_update form input[type=submit] {padding:7px;}

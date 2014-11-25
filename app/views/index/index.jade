@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  h1 Welcome to #{title}
+  -if(username)
+    span Hello, #{username}
+  br
+  -if(username.length > 0)
+    a(href='/users/logout') Log Out
+    span.link_divider |
+    a(href='/profile') User's Profile
+  -else
+    a(href='/users/login') Log In
+    span.link_divider |
+    a(href='/users/register') Register
+    

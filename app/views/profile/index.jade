@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h1 #{title}
+  -if(username)
+    span Hello, #{username}
+  br
+  -if(username.length > 0)
+    a(href='/') Main
+    include form_profile
+    include form_password

@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    link(type="text/css"
+        rel="stylesheet"
+        href="/stylesheets/style.css"
+        media="all")
+  body
+    #container.container
+        h1.header Express Auth App
+        .wrapper
+            -if(error_messages)
+                div#err_note #{error_messages}
+            -if(success_messages)
+                div#success_note #{success_messages}
+            block content

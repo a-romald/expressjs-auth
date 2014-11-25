@@ -1,0 +1,18 @@
+div.form_reg
+	h3 Register Your Account
+	-if (errors)
+		div.err
+			for error in errors
+				p.error #{error}
+
+	form(action='' method='post')
+		label(for='text') Username
+		input(type='text' name='username' placeholder='Your Username' required)
+		br
+		label(for='password') Password
+		input(type='password' name='password' placeholder='Your Password' required)
+		br
+		label(for='email') Email
+		input(type='email' name='email' placeholder='Your Email' required)
+		br		
+		input(type='submit' name='submit' value='Register')

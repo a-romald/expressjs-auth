@@ -1,0 +1,15 @@
+div.form_reg
+	h3 Update Your Account
+	-if (errors)
+		div.err
+			for error in errors
+				p.error #{error}
+
+	form(action='' method='post')
+		label(for='text') Username
+		input(type='text' name='username' placeholder='Your Username' value="#{user.username}"  required)
+		br
+		label(for='email') Email
+		input(type='email' name='email' placeholder='Your Email' value="#{user.email}" required)
+		br		
+		input(type='submit' name='submit_profile' value='Update')
